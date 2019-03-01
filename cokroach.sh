@@ -1,15 +1,4 @@
-##########################################################
-#	[Unit]
-#	Description = Plays a song at start and end of the system
-#	After = network.target
-#
-#	[Service]
-#	ExecStart = /root/scripts/conup.sh
-#
-#	[Install]
-#	WantedBy = multi-user.target
-#############################################################
-
+#!/bin/bash
 SOL3=196
 LA3=207.65
 SI3=246.94
@@ -63,36 +52,6 @@ sing_stop(){
 		-n -f $MI4 -l $SEMICORCHEA				\
 		-n -f $RE4 -l $SEMICORCHEA				\
 		-n -f $DO4 -l $BLANCA
-	}
-
-sing_start(){
-	beep	-f130	-l100	\
-		-n	-f262	-l100	\
-		-n	-f330	-l100	\
-		-n	-f392	-l100	\
-		-n	-f523	-l100	\
-		-n	-f660	-l100	\
-		-n	-f784	-l300	\
-		-n	-f660	-l300	\
-		-n	-f146	-l100	\
-		-n	-f262	-l100	\
-		-n	-f311	-l100	\
-		-n	-f415	-l100	\
-		-n	-f523	-l100	\
-		-n	-f622	-l100	\
-		-n	-f831	-l300	\
-		-n	-f622	-l300	\
-		-n	-f155	-l100	\
-		-n	-f294	-l100	\
-		-n	-f349	-l100	\
-		-n	-f466	-l100	\
-		-n	-f588	-l100	\
-		-n	-f699	-l100	\
-		-n	-f933	-l300	\
-		-n	-f933	-l100	\
-		-n	-f933	-l100	\
-		-n	-f933	-l100	\
-		-n	-f1047	-l400
 }
 
 sing_cucaracha
