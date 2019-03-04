@@ -19,7 +19,7 @@ DELAY=100
 
 sing_cucaracha(){
 	beep   -f $SOL3 -l $CORCHEA					\
-		-n -f $SOL3 -l $SEMICORCHEA 				\
+		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $DO4 -l $NEGRA					\
 		-n -f $MI4 -l $SEMICORCHEA				\
@@ -55,9 +55,11 @@ sing_cucaracha(){
 }
 
 eject
-eject -t
-eject
 sing_cucaracha
 eject -t
-eject
-eject -t
+
+MSG="Termino la cucaracha"
+$CHAT_ID="-1001170695214"
+$APITOKEN="777269881:AAGmeeNNrG7o-L6izcmDMqXKKhYWJ11hCok"
+
+curl -s -X POST https://api.telegram.org/bot$APITOKEN/sendMessage -d text="$MSG" -d chat_id=$CHAT_ID >/dev/null
