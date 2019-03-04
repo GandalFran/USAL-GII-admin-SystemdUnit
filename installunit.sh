@@ -8,7 +8,7 @@ SERVICE_NAME="cockroach"
 COMMAND="/bin/sh $PROGRAM_FINAL_PATH"
 
 SERVICE_DESCRIPTION="Script to play \"La cucaracha\" with beep at the start of session"
-TARGET_DEPENDENCES="getty.target network-online.target"
+TARGET_DEPENDENCES="getty.target"
 START_AT_RUNLEVEL="multi-user.target"
 ##########################################################################################
 
@@ -21,7 +21,6 @@ SERVICE_DECLARATION="
 \n
 \n[Service]
 \nType=simple
-\nUser=root
 \nExecStart=$COMMAND
 \n
 \n[Install]

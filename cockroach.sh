@@ -58,8 +58,3 @@ eject
 sing_cucaracha
 eject -t
 
-MSG="Termino la cucaracha"
-$CHAT_ID="-1001170695214"
-$APITOKEN="777269881:AAGmeeNNrG7o-L6izcmDMqXKKhYWJ11hCok"
-
-curl -s -X POST https://api.telegram.org/bot$APITOKEN/sendMessage -d text="$MSG" -d chat_id=$CHAT_ID >/dev/null
