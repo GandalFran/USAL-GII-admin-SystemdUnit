@@ -10,37 +10,37 @@ FA4=349.23
 SOL4=392
 LA4=440
 
-CORCHEA=100
+CORCHEA=200
 NEGRA=$CORCHEA*2
 BLANCA=$NEGRA*2
 SEMICORCHEA=125
 
 DELAY=100
 
-sing_stop(){
+sing_cucaracha(){
 	beep   -f $SOL3 -l $CORCHEA					\
-		-n -f $SOL3 -l $SEMICORCHEA 			\
+		-n -f $SOL3 -l $SEMICORCHEA 				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $DO4 -l $NEGRA					\
 		-n -f $MI4 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
-		-n -f $SOL3 -l $SEMICORCHEA -D $DELAY	\
+		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $DO4 -l $NEGRA					\
 		-n -f $MI4 -l $BLANCA					\
-		-n -f $DO4 -l $SEMICORCHEA -D $DELAY	\
+		-n -f $DO4 -l $SEMICORCHEA				\
 	 	-n -f $DO4 -l $SEMICORCHEA				\
 		-n -f $SI3 -l $SEMICORCHEA				\
 		-n -f $SI3 -l $SEMICORCHEA				\
 		-n -f $LA3 -l $SEMICORCHEA				\
 		-n -f $LA3 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $NEGRA					\
-		-n -f $SOL3 -l $CORCHEA -D $DELAY		\
+		-n -f $SOL3 -l $CORCHEA					\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SI3 -l $NEGRA					\
 		-n -f $RE4 -l $SEMICORCHEA				\
-		-n -f $SOL3 -l $SEMICORCHEA -D $DELAY	\
+		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SOL3 -l $SEMICORCHEA				\
 		-n -f $SI3 -l $NEGRA					\
@@ -54,4 +54,10 @@ sing_stop(){
 		-n -f $DO4 -l $BLANCA
 }
 
+eject
+eject -t
+eject
 sing_cucaracha
+eject -t
+eject
+eject -t
