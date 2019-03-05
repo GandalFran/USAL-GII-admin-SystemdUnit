@@ -1,0 +1,7 @@
+● cockroach.service - Script to play "La cucaracha" with beep at the start of session
+   Loaded: loaded (/etc/systemd/system/cockroach.service; enabled; vendor preset: enabled)
+   Active: inactive (dead) since Tue 2019-03-05 12:49:15 CET; 2min 27s ago
+  Process: 466 ExecStart=/bin/sh /bin/cockroach.sh (code=exited, status=0/SUCCESS)
+ Main PID: 466 (code=exited, status=0/SUCCESS)
+
+mar 05 12:49:06 labhp02 systemd[1]: Started Script to play "La cucaracha" with beep at the start of session.
