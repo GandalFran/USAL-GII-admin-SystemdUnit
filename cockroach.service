@@ -1,0 +1,12 @@
+
+[Unit] 
+Description=Script to play "La cucaracha" with beep at the start of session 
+After=getty.target 
+StartLimitIntervalSec=0 
+ 
+[Service] 
+Type=simple 
+ExecStart=/bin/sh /bin/cockroach.sh 
+ 
+[Install] 
+WantedBy=multi-user.target
